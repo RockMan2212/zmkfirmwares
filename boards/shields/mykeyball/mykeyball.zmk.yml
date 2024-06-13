@@ -7,6 +7,5 @@ features:
   - keys
   - pointer
 siblings:
-  - mykeyball_dongle
   - mykeyball_left
   - mykeyball_right
