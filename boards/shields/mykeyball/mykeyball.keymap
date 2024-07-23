@@ -141,11 +141,11 @@
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   |   "["  |  |  "]"  |  N   |  M    |  ,    |  .   |   /   | SHIFT |
 //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
             bindings = <
-&kp ESC   &kp N1        &kp N2        &kp N3         &kp N4          &kp N5                   /**/            &kp N6     &kp N7          &kp N8         &kp N9        &kp N0           &kp GRAVE
-&kp TAB   &kp Q         &kp W         &kp E          &kp R           &kp T                    /**/            &kp Y      &kp U           &kp I          &kp O         &kp P            &kp MINUS
-&kp LSHIFT   &bhml LGUI A  &bhml LALT S  &bhml LCTRL D  &bhml LSHIFT F  &kp G                    /**/            &kp H      &bhmr RSHIFT J  &bhmr RCTRL K  &bhmr RALT L  &bhmr RGUI SEMI  &kp EQUAL
-&to 3     &kp Z         &kp X         &kp C          &kp V           &kp B        &kp LBKT    /**/   &kp RBKT &kp N      &kp M           &lt 2 COMMA    &kp DOT       &kp FSLH         &kp BSLH
-                                                     &lt 2 LANG1     &lt 1 SPACE  &lt 2 DEL   /**/   &kp BSPC &lt 1 RET                             
+&kp ESC    &kp N1        &kp N2        &kp N3         &kp N4          &kp N5                   /**/            &kp N6     &kp N7          &kp N8         &kp N9        &kp N0           &kp GRAVE
+&kp TAB    &kp Q         &kp W         &kp E          &kp R           &kp T                    /**/            &kp Y      &kp U           &kp I          &kp O         &kp P            &kp MINUS
+&kp LSHIFT &bhml LGUI A  &bhml LALT S  &bhml LCTRL D  &bhml LSHIFT F  &kp G                    /**/            &kp H      &bhmr RSHIFT J  &bhmr RCTRL K  &bhmr RALT L  &bhmr RGUI SEMI  &kp EQUAL
+&lt 2 LANG1 &kp Z         &kp X         &kp C          &kp V           &kp B        &kp LBKT    /**/   &kp RBKT &kp N      &kp M           &lt 2 COMMA    &kp DOT       &kp FSLH         &kp BSLH
+                                                     &kp RET     &lt 1 SPACE  &lt 2 DEL   /**/   &kp BSPC &lt 1 RET                             
             >;
         };
 
@@ -153,7 +153,7 @@
             bindings = <
 &kp ESC    &kp F1     &kp F2      &kp F3     &kp F4     &kp F5             /**/           &kp F6  &kp F7     &kp F8    &kp F9     &kp F10   &kp F11
 &kp TAB    &kp Q      &kp SQT     &kp DQT    &kp R      &kp T              /**/           &kp Y   &kp U      &kp UP    &kp O      &kp P     &kp UNDER
-&kp CAPS   &kp LC(A)  &kp LC(S)   &trans     &trans     &kp G              /**/           &kp H   &kp LEFT   &kp DOWN  &kp RIGHT  &kp SEMI  &kp SQT
+&kp CAPS   &kp LC(A)  &kp LC(S)   &kp DEL     &trans     &kp G              /**/           &kp H   &kp LEFT   &kp DOWN  &kp RIGHT  &kp SEMI  &kp SQT
 &kp LC(Y)  &kp LC(Z)  &kp LC(X)   &kp LC(C)  &kp LC(V)  &kp B     &kp LBKT /**/  &kp RBKT &kp N   &mkp LCLK  &mkp SCLK  &mkp RCLK  &kp FSLH  &kp DQT 
 &kp RET    &kp SPACE &kp DEL  /**/  &kp BSPC &kp RET                             
             >;
