@@ -15,7 +15,7 @@
 #  shield: mykeyball_right
     
 board: [ "nice_nano_v2" ]
-shield: [ "myhand_left" ]
+shield: [ "myhand_left", "myhand_right", "myhand_dongle" ]
 include:
   - board: nice_nano_v2
     shield: myhand_left
