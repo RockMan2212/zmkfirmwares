@@ -11,7 +11,7 @@
 #define DEFAULT 0
 #define UPPER 1
 #define LOWER 2
-#define GAME 3
+#define FUNC 3
 
 #define NUM_L 1 2 3 4 5
 #define NUM_R 6 7 8 9 10
@@ -39,11 +39,37 @@
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   |   "["  |  |  "]"  |  N   |  M    |  ,    |  .   |   /   | SHIFT |
 //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
             bindings = <
-&kp TAB   &kp Q         &kp W         &kp E          &kp R           &kp T                    /**/            &kp Y      &kp U           &kp I          &kp O         &kp P            &kp MINUS
-&kp CAPS  &kp A         &kp S         &kp D          &kp F           &kp G                    /**/            &kp H      &kp J           &kp K          &kp L         &kp SEMI         &kp EQUAL
-&kp 3     &kp Z         &kp X         &kp C          &kp V           &kp B                    /**/            &kp N      &kp M           &kp COMMA      &kp DOT       &kp FSLH         &kp BSLH
-                                      &kp N1         &kp SPACE       &kp DEL                /**/              &kp BSPC   &kp RET  &kp N1                           
+&kp TAB     &kp Q         &kp W         &kp E          &kp R           &kp T                    /**/            &kp Y      &kp U           &kp I          &kp O         &kp P            &kp MINUS
+&kp CAPS    &kp A         &kp S         &kp D          &lt 3 F           &kp G                    /**/            &kp H      &kp J           &kp K          &kp L         &kp SEMI         &kp EQUAL
+&kp LSHIFT  &kp Z         &kp X         &kp C          &kp V           &kp B                    /**/            &kp N      &kp M           &kp COMMA      &kp DOT       &kp FSLH         &kp BSLH
+                                                        &lt 1 SPACE     &lt 2 DEL                /**/              &kp BSPC   &kp RET                            
             >;
         };
+
+        upper_layer {
+            bindings = <
+&kp TAB         &kp Q      &kp SQT     &kp DQT    &kp HOME        &kp END            /**/  &kp Y        &kp U      &kp UP    &kp O      &kp P     &kp UNDER
+&kp CAPS        &kp LC(A)  &kp LC(S)   &kp DEL    &kp PAGE_DOWN   &kp PAGE_UP        /**/  &kp H        &kp LEFT   &kp DOWN  &kp RIGHT  &kp SEMI  &kp SQT
+&kp  2 LANG1    &kp LC(Z)  &kp LC(X)   &kp LC(C)  &kp LC(V)       &kp LBKT           /**/  &kp RBKT     &trans     &trans    &trans     &kp FSLH  &kp DQT 
+                                                                  &kp SPACE &kp DEL  /**/  &kp BSPC     &kp RET                             
+            >;
+        };
+
+        lower_layer {
+            bindings = <
+&kp ESC    &kp Q      &kp W       &kp E      &kp R      &kp T   /**/  &kp N7     &kp N8    &kp N9   &kp O      &kp P       &kp EQUAL
+&kp CAPS   &kp A      &trans      &trans     &trans     &kp G   /**/  &kp N4     &kp N5    &kp N6   &kp RIGHT  &kp SEMI    &kp MINUS
+&kp LC(Y)  &kp LC(Z)  &kp LC(X)   &kp LC(C)  &kp LC(V)  &kp B   /**/  &kp N1     &kp N2    &kp N3   &kp RCLK   &kp FSLH    &kp BSLH
+                                             &kp SPACE &kp DEL  /**/  &kp N0  &kp RET                             
+            >;
+
+        FUNC_layer {
+            bindings = <
+&kp TAB    &kp Q      &kp W       &kp E      &kp R      &kp T   /**/  &kp F9     &kp F10   &kp F11  &kp 12   &kp P       &kp EQUAL
+&kp CAPS   &kp A      &trans      &trans     &trans     &kp G   /**/  &kp F5     &kp F6    &kp F7   &kp F8   &kp SEMI    &kp MINUS
+&kp LC(Y)  &kp LC(Z)  &kp LC(X)   &kp LC(C)  &kp LC(V)  &kp B   /**/  &kp F1     &kp F2    &kp F3   &kp F4   &kp FSLH    &kp BSLH
+                                             &kp SPACE &kp DEL  /**/  &kp N0  &kp RET                             
+            >;
+
     };
 };
