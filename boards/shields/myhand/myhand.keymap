@@ -62,6 +62,7 @@
 &kp LC(Y)  &kp LC(Z)  &kp LC(X)   &kp LC(C)  &kp LC(V)  &kp B   /**/  &kp N1     &kp N2    &kp N3   &kp RCLK   &kp FSLH    &kp BSLH
                                              &kp SPACE &kp DEL  /**/  &kp N0  &kp RET                             
             >;
+        };
 
         FUNC_layer {
             bindings = <
@@ -70,6 +71,6 @@
 &kp LC(Y)  &kp LC(Z)  &kp LC(X)   &kp LC(C)  &kp LC(V)  &kp B   /**/  &kp F1     &kp F2    &kp F3   &kp F4   &kp FSLH    &kp BSLH
                                              &kp SPACE &kp DEL  /**/  &kp N0  &kp RET                             
             >;
-
+        };
     };
 };
