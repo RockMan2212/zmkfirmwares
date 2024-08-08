@@ -53,18 +53,18 @@
 //                            |SPACE | DEL  |       | basc | RET   | 
             bindings = <
 &kp TAB     &kp Q         &kp W         &kp E       &kp R           &kp T                    /**/            &kp Y      &kp U           &kp I          &kp O         &kp P            &kp MINUS
-&kp LCTRL   &kp A         &kp S         &kp D       &lt 3 F         &kp G                    /**/            &kp H      &kp J           &kp K          &kp L         &kp SEMI         &kp EQUAL
-&kp LSHIFT  &kp Z         &kp X         &kp C       &kp V           &kp B                    /**/            &kp N      &kp M           &kp COMMA      &kp DOT       &kp FSLH         &kp BSLH
+&kp LSHIFT  &kp A         &kp S         &kp D       &lt 3 F         &kp G                    /**/            &kp H      &kp J           &kp K          &kp L         &kp SEMI         &kp EQUAL
+&kp LCTRL  &kp Z         &kp X         &kp C       &kp V           &kp B                    /**/            &kp N      &kp M           &kp COMMA      &kp DOT       &kp FSLH         &kp BSLH
                                         &trans     &lt 1 SPACE     &lt 2 DEL                /**/              &kp BSPC   &kp RET                            
             >;
         };
 
         lower_layer {
             bindings = <
-&kp ESC         &kp Q      &kp SQT      &kp DQT    &kp HOME        &kp END            /**/  &kp N7   &kp N8    &kp N9   &kp O      &kp UP     &kp UNDER
+&kp ESC         &kp GRAVE  &kp SQT      &kp DQT    &kp HOME        &kp END            /**/  &kp N7   &kp N8    &kp N9   &kp O      &kp UP     &kp UNDER
 &kp LANG1       &kp A      &kp S        &kp DEL    &kp PAGE_DOWN   &kp PAGE_UP        /**/  &kp N4   &kp N5    &kp N6   &kp LEFT   &kp DOWN  &kp RIGHT
 &kp LSHIFT      &kp Z      &kp X        &kp C      &kp V          &kp LBKT           /**/  &kp N1   &kp N2    &kp N3   &trans     &kp FSLH  &kp DQT 
-                                        &trans    &kp SPACE       &kp DEL           /**/   &kp N0   &kp RET                             
+                                        &trans    &kp LALT       &kp DEL           /**/   &kp N0   &kp RET                             
             >;
         };
 
