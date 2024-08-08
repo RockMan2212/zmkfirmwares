@@ -61,8 +61,8 @@
 
         lower_layer {
             bindings = <
-&kp ESC         &kp Q      &kp SQT     &kp DQT    &kp HOME        &kp END            /**/  &kp N7   &kp N8    &kp N9   &kp O      &kp P     &kp UNDER
-&kp CAPS        &kp LC(A)  &kp LC(S)   &kp DEL    &kp PAGE_DOWN   &kp PAGE_UP        /**/  &kp N4   &kp N5    &kp N6   &kp RIGHT  &kp SEMI  &kp SQT
+&kp ESC         &kp Q      &kp SQT     &kp DQT    &kp HOME        &kp END            /**/  &kp N7   &kp N8    &kp N9   &kp O      &kp UP     &kp UNDER
+&kp CAPS        &kp LC(A)  &kp LC(S)   &kp DEL    &kp PAGE_DOWN   &kp PAGE_UP        /**/  &kp N4   &kp N5    &kp N6   &kp LEFT   &kp DOWN  &kp RIGHT
 &kp LANG1       &kp LC(Z)  &kp LC(X)   &kp LC(C)  &kp LC(V)       &kp LBKT           /**/  &kp N1   &kp N2    &kp N3   &trans     &kp FSLH  &kp DQT 
                                                   &trans          &kp SPACE &kp DEL  /**/  &kp N0   &kp RET                             
             >;
