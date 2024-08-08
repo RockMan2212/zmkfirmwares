@@ -29,15 +29,28 @@
 #define THUMBS 50 51 52 53 54
 
 / {
+    combos {
+        combo_lbkt {
+            timeout-ms = <50>;
+            key-positions = <2 0>;
+            bindings = <&kp LBKT>;
+        };
+        combo_rbkt {
+            timeout-ms = <50>;
+            key-positions = <2 11>;
+            bindings = <&kp RBKT>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
  
         default_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   |   -   |
-// |  CTRL |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
-// | SHIFT |  Z  |  X  |  C   |  V   |  B   |   "["  |  |  "]"  |  N   |  M    |  ,    |  .   |   /   | SHIFT |
-//                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
+// |  TAB  |  Q  |  W  |  E   |  R   |  T   |       |  Y   |  U    |  I    |  O   |   P   |   -   |
+// |  CTRL |  A  |  S  |  D   |  F   |  G   |       |  H   |  J    |  K    |  L   |   ;   |   '   |
+// | SHIFT |  Z  |  X  |  C   |  V   |  B   |       |  N   |  M    |  ,    |  .   |   /   | SHIFT |
+//                            |SPACE | DEL  |       | basc | RET   | 
             bindings = <
 &kp TAB     &kp Q         &kp W         &kp E       &kp R           &kp T                    /**/            &kp Y      &kp U           &kp I          &kp O         &kp P            &kp MINUS
 &kp CAPS    &kp A         &kp S         &kp D       &lt 3 F         &kp G                    /**/            &kp H      &kp J           &kp K          &kp L         &kp SEMI         &kp EQUAL
