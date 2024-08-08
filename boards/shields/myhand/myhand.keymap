@@ -9,8 +9,8 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define DEFAULT 0
-#define UPPDER_LAYER 1
-#define LOWER_LAYER 2
+#define LOWER 1
+#define RAISE 2
 #define FUNC 3
 
 #define NUM_L 1 2 3 4 5
@@ -46,7 +46,7 @@
             >;
         };
 
-        upper_layer {
+        lower_layer {
             bindings = <
 &kp TAB         &kp Q      &kp SQT     &kp DQT    &kp HOME        &kp END            /**/  &kp Y        &kp U      &kp UP    &kp O      &kp P     &kp UNDER
 &kp CAPS        &kp LC(A)  &kp LC(S)   &kp DEL    &kp PAGE_DOWN   &kp PAGE_UP        /**/  &kp H        &kp LEFT   &kp DOWN  &kp RIGHT  &kp SEMI  &kp SQT
@@ -55,7 +55,7 @@
             >;
         };
 
-        lower_layer {
+        raise_layer {
             bindings = <
 &kp TAB         &kp Q      &kp SQT     &kp DQT    &kp HOME        &kp END            /**/  &kp Y        &kp U      &kp UP    &kp O      &kp P     &kp UNDER
 &kp CAPS        &kp LC(A)  &kp LC(S)   &kp DEL    &kp PAGE_DOWN   &kp PAGE_UP        /**/  &kp H        &kp LEFT   &kp DOWN  &kp RIGHT  &kp SEMI  &kp SQT
