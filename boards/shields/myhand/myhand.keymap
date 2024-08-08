@@ -64,16 +64,16 @@
 &kp ESC         &kp Q      &kp SQT      &kp DQT    &kp HOME        &kp END            /**/  &kp N7   &kp N8    &kp N9   &kp O      &kp UP     &kp UNDER
 &kp LANG1       &kp A      &kp S        &kp DEL    &kp PAGE_DOWN   &kp PAGE_UP        /**/  &kp N4   &kp N5    &kp N6   &kp LEFT   &kp DOWN  &kp RIGHT
 &kp LSHIFT      &kp Z      &kp X        &kp C      &kp V          &kp LBKT           /**/  &kp N1   &kp N2    &kp N3   &trans     &kp FSLH  &kp DQT 
-                                                  &trans          &kp SPACE &kp DEL  /**/  &kp N0   &kp RET                             
+                                        &trans    &kp SPACE       &kp DEL           /**/   &kp N0   &kp RET                             
             >;
         };
 
         func_layer {
             bindings = <
 &kp ESC         &kp Q      &kp SQT     &kp DQT    &kp HOME        &kp END            /**/  &kp F9   &kp F10   &kp F11  &kp F12    &kp LBKT  &kp RBKT
-&kp CAPS        &kp A      &kp S       &kp D      &lt F           &kp PAGE_UP        /**/  &kp F5   &kp F6    &kp F7   &kp F8     &kp SEMI  &kp SQT
+&kp CAPS        &kp A      &kp S       &kp D      &kp F           &kp PAGE_UP        /**/  &kp F5   &kp F6    &kp F7   &kp F8     &kp SEMI  &kp SQT
 &kp LSHIFT      &kp Z      &kp X       &kp C      &kp V           &kp LBKT           /**/  &kp F1   &kp F2    &kp F3   &kp F4     &kp FSLH  &kp DQT 
-                                                  &trans          &kp SPACE &kp DEL  /**/  &kp LGUI   &kp RET                             
+                                       &trans     &kp SPACE       &kp DEL           /**/  &kp LGUI   &kp RET                             
             >;
         };
 
