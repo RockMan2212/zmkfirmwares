@@ -30,28 +30,17 @@
 
 / {
     
-   combos {
-        compatible = "zmk,combos";
-        // symbols
-        combo_lalt {
-            timeout-ms = <50>;
-            key-positions = <3 10>;
-            layers = <0>;
-            bindings = <&kp LALT>;
-        };
-    };
-
+   
 behaviors {
-        bhmr: balanced_homerow_right {
+        
+        hm: homerow {
             compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <230>;
-            quick-tap-ms = <175>;                // repeat on tap-into-hold
-            require-prior-idle-ms = <80>;
+            tapping-term-ms = <300>;    // <---[[moderate duration]]
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <NUM_L ALPHA_L MACRO_L THUMBS>;    // <---[[the W key]]
-            hold-trigger-on-release;
         };
     };
 
@@ -68,7 +57,7 @@ behaviors {
    &kp TAB   &kp Q &kp W    &kp E      &kp R        &kp T         &kp Y   &kp U       &kp I     &kp O   &kp P    &kp BSPC
    &kp LSHFT &kp A &kp S    &kp D      &kp F        &kp G         &kp H   &kp J       &kp K     &kp L   &kp SEMI &kp SQT
    &kp LCTRL &kp Z &kp X    &kp C      &kp V        &kp B         &kp N   &kp M       &kp COMMA &kp DOT &kp FSLH &kp ESC
-                            &kp LGUI   &lt 1 SPACE  &lt 2 LGUI    &kp RET &kp RALT    &bhmr LALT RALT
+                            &kp LGUI   &lt 1 SPACE  &lt 2 LGUI    &kp RET &kp RALT    &hm LALT RALT
                         >;
                 };
                 lower_layer {
