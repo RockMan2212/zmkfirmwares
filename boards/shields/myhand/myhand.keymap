@@ -38,7 +38,9 @@
             key-positions = <0 5>;
             layers = <0>;
             bindings = <&kp LALT>;
+        };
     };
+
 
     keymap {
         compatible = "zmk,keymap";
