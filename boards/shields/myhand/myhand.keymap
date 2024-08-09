@@ -33,9 +33,9 @@
    combos {
         compatible = "zmk,combos";
         // symbols
-        combo_sqt {
+        combo_lalt {
             timeout-ms = <50>;
-            key-positions = <0 5>;
+            key-positions = <2 6>;
             layers = <0>;
             bindings = <&kp LALT>;
         };
