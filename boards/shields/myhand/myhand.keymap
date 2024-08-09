@@ -41,7 +41,13 @@ behaviors {
             key-positions = <39 40>;
             bindings = <&kp LALT>;
         };
-        
+        combo_LALT2 {
+            timeout-ms = <50>;
+            key-positions = <33 34>;
+            bindings = <&kp LALT>;
+        };
+
+
     };
     };
 
