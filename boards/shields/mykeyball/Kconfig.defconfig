@@ -8,14 +8,6 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 endif
 
-config CONFIG_PMW3610
-    default y
-config CONFIG_PMW3610_CPI
-    default 1000
-config CONFIG_PMW3610_ORIENTATION_180
-    default y 
-config CONFIG_PMW3610_POLLING_RATE_125_SW
-    default y
 
 
 if SHIELD_MYKEYBALL_LEFT || SHIELD_MYKEYBALL_RIGHT 
