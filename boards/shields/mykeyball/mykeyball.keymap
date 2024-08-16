@@ -135,37 +135,54 @@
  
         default_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   `   |
-// |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   |   -   |
-// |  CTRL |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
-// | SHIFT |  Z  |  X  |  C   |  V   |  B   |   "["  |  |  "]"  |  N   |  M    |  ,    |  .   |   /   | SHIFT |
-//                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
+// |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |  DEL  |
+// |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   |   `   |
+// | SHIFT |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
+// |  CTRL |  Z  |  X  |  C   |  V   |  B   |   "["  |  |  "]"  |  N   |  M    |  ,    |  .   |   /   | SHIFT |
+//                            | LALT | LOWER|  SPACE |  | ENTER | RALT | 
+
             bindings = <
-&kp ESC    &kp N1        &kp N2        &kp N3         &kp N4          &kp N5                   /**/            &kp N6     &kp N7          &kp N8         &kp N9        &kp N0           &kp GRAVE
-&kp TAB    &kp Q         &kp W         &kp E          &kp R           &kp T                    /**/            &kp Y      &kp U           &kp I          &kp O         &kp P            &kp MINUS
-&kp LSHIFT &bhml LGUI A  &bhml LALT S  &bhml LCTRL D  &bhml LSHIFT F  &kp G                    /**/            &kp H      &bhmr RSHIFT J  &bhmr RCTRL K  &bhmr RALT L  &bhmr RGUI SEMI  &kp EQUAL
-&lt 2 LANG1 &kp Z         &kp X         &kp C          &kp V          &kp B        &kp LBKT    /**/   &kp RBKT &kp N      &kp M           &lt 2 COMMA    &kp DOT       &kp FSLH         &kp BSLH
-                                                       &kp RET        &lt 1 SPACE   &kp BSPC   /**/   &kp BSPC &lt 1 RET                             
+&kp ESC    &kp N1  &kp N2  &kp N3   &kp N4     &kp N5                   /**/            &kp N6   &kp N7  &kp N8         &kp N9   &kp N0    &kp DEL
+&kp TAB    &kp Q   &kp W   &kp E    &kp R      &kp T                    /**/            &kp Y    &kp U   &kp I          &kp O    &kp P     &kp GRAVE
+&kp LSHIFT &kp A   &kp S   &kp D    &kp F      &kp G                    /**/            &kp H    &kp J   &kp K          &kp L    &kp SEMI  &kp SQT
+&lt LCTRL  &kp Z   &kp X   &kp C    &kp V      &kp B        &kp LBKT    /**/   &kp RBKT &kp N    &kp M   &lt 2 COMMA    &kp DOT  &kp FSLH  &kp RSHIFT
+                                     &kp RET   &lt 1 SPACE   &kp BSPC   /**/   &kp BSPC &lt 1 RET                             
             >;
         };
 
+// ------------------------------------------------------------------------------------------------------------
+// |  F12  | F1  | F2  | F3   | F4   | F5   |                   | F6   | F7    | F8    | F9   |  F10  |  F11  |
+// |  TAB  |     |     |      | HOME | END  |                   |      |       |  UP   |      |       |       |
+// | SHIFT |     |     |      | PGDN | PGUP |                   |      |  LEFT |  DWN  | RGT  |       |       |
+// |  CTRL |     |     |LC(C) |LC(V) |      |   "["  |  |  "]"  |      |  LCLK | SCLK  | RCLK |       | SHIFT |
+//                            | LALT | LOWER|  SPACE |  | ENTER | RALT |
+//&mkp LCLK  &mkp SCLK  &mkp RCLK
         upper_layer {
             bindings = <
-&kp ESC    &kp F1     &kp F2      &kp F3     &kp F4          &kp F5             /**/           &kp F6   &kp F7     &kp F8    &kp F9     &kp F10   &kp F11
-&kp TAB    &kp Q      &kp SQT     &kp DQT    &kp HOME        &kp END            /**/           &kp Y    &kp U      &kp UP    &kp O      &kp P     &kp UNDER
-&kp CAPS   &kp LC(A)  &kp LC(S)   &kp DEL    &kp PAGE_DOWN   &kp PAGE_UP        /**/           &kp H   &kp LEFT   &kp DOWN  &kp RIGHT  &kp SEMI  &kp SQT
-&kp LC(Y)  &kp LC(Z)  &kp LC(X)   &kp LC(C)  &kp LC(V)       &kp B     &kp LBKT /**/  &kp RBKT &kp N    &trans     &trans    &trans     &kp FSLH  &kp DQT 
-&kp RET    &kp SPACE &kp DEL  /**/  &kp BSPC &kp RET                             
+&kp ESC    &kp F1     &kp F2      &kp F3     &kp F4          &kp F5              /**/           &kp F6   &kp F7     &kp F8    &kp F9     &kp F10   &kp F11
+&kp TAB    &trans     &trans      &trans     &kp HOME        &kp END             /**/           &trans   &trans     &kp UP    &kp O      &trans    &trans
+&kp CAPS   &trans     &trans      &trans     &kp PAGE_DOWN   &kp PAGE_UP         /**/           &trans   &kp LEFT   &kp DOWN  &kp RIGHT  &trans    &trans
+&kp LSHIFT &trans     &trans      &kp LC(C)  &kp LC(V)       &trans     &kp LBKT /**/  &kp RBKT &trans   &mkp LCLK  &mkp SCLK &mkp RCLK  &trans    &kp RSHIFT 
+                                             &kp LCTRL       &kp SPACE  &kp DEL  /**/  &kp BSPC &kp RET                             
             >;
         };
+
+// ------------------------------------------------------------------------------------------------------------
+// |  ESC  |  !  |  @  |  #   |  $   |  %   |                   |  ^   |  &    |  *    |  (   |  )    |  BKSP |
+// | BTCLR | BT1 | BT2 | BT3  | BT4  | BT5  |                   |  -   |  =    |  [    |  ]   |  \    |  `    | 
+// | SHIFT |     |     |      |      |      |                   |  _   |  +    |  {    |  }   | "|"   |  ~    | 
+// |  CTRL |     |     |      |      |      |   "["  |  |  "]"  |      |       |       |      |       | SHIFT |
+//                            | LALT | LOWER|  SPACE |  | ENTER | RALT |
+//| BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 
+//&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
 
         lower_layer {
             bindings = <
-&kp ESC    &kp N1     &kp N2      &kp N3         &kp N4        &kp N5       /**/        &kp N6 &kp N7        &kp N8        &kp N9       &kp N0   &kp GRAVE
-&kp TAB    &kp Q      &kp W       &kp E         &kp R         &kp T        /**/        &kp Y  &kp U         &kp UP         &kp O        &kp P    &kp EQUAL
-&kp CAPS   &kp A      &trans      &trans     &trans     &kp G        /**/        &kp H    &kp LEFT  &kp DOWN &kp RIGHT &kp SEMI   &kp MINUS
-&kp LC(Y)  &kp LC(Z)  &kp LC(X)   &kp LC(C)  &kp LC(V)  &kp B     &kp LBKT /**/  &kp RBKT &kp N         &kp LCLK     &kp SCLK    &kp RCLK  &kp FSLH &kp BSLH
-                                             &kp RET    &kp SPACE &kp DEL  /**/  &kp BSPC &kp RET                             
+&kp ESC    &kp EXCL     &kp AT       &kp HASH     &kp DLLR     &kp PRCNT          /**/           &kp CARET &kp AMPS      &kp ASTRK     &kp LPAR    &kp RPAR &kp BSPC 
+&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4       /**/           &kp MINUS &kp EQUAL     &kp LBKT      &kp RBKT    &kp BSLH &kp GRAVE
+&kp LSHIFT &trans       &trans       &trans       &trans       &trans             /**/           &kp UNDER &kp PLUS      &kp LBRC      &kp RBRC    &kp PIPE &kp TILDE
+&kp LCTRL  &trans       &trans       &trans       &trans       &trans    &kp LBKT /**/  &kp RBKT &trans    &trans        &trans        &trans      &trans   &kp RSHIFT
+                                                  &kp LALT     &kp SPACE &kp BSPC /**/  &kp RET &kp RALT                             
             >;
         };
     };
