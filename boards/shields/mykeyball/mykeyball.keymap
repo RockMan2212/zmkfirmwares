@@ -146,7 +146,7 @@
 &kp TAB    &kp Q   &kp W   &kp E    &kp R      &kp T                      /**/              &kp Y    &kp U   &kp I          &kp O    &kp P     &kp GRAVE
 &kp LSHIFT &kp A   &kp S   &kp D    &kp F      &kp G                      /**/              &kp H    &kp J   &kp K          &kp L    &kp SEMI  &kp SQT
 &kp LCTRL  &kp Z   &kp X   &kp C    &kp V      &kp B        &lt 2 LBKT    /**/   &lt 2 RBKT &kp N    &kp M   &kp COMMA    &kp DOT  &kp FSLH  &kp RSHIFT
-                                     &kp RET   &lt 1 SPACE  &kp BSPC      /**/   &kp BSPC   &lt 1 RET                             
+                                     &kp LALT  &lt 1 SPACE  &kp BSPC      /**/   &kp RET    &lt 1 RALT                         
             >;
         };
 
@@ -159,11 +159,11 @@
 //&mkp LCLK  &mkp SCLK  &mkp RCLK
         upper_layer {
             bindings = <
-&kp ESC    &kp F1     &kp F2      &kp F3     &kp F4          &kp F5              /**/           &kp F6   &kp F7     &kp F8    &kp F9     &kp F10   &kp F11
-&kp TAB    &trans     &trans      &trans     &kp HOME        &kp END             /**/           &trans   &trans     &kp UP    &kp O      &trans    &trans
-&kp CAPS   &trans     &trans      &trans     &kp PAGE_DOWN   &kp PAGE_UP         /**/           &trans   &kp LEFT   &kp DOWN  &kp RIGHT  &trans    &trans
-&kp LSHIFT &trans     &trans      &kp LC(C)  &kp LC(V)       &trans     &kp LBKT /**/  &kp RBKT &trans   &mkp LCLK  &mkp SCLK &mkp RCLK  &trans    &kp RSHIFT 
-                                             &kp LCTRL       &kp SPACE  &kp DEL  /**/  &kp BSPC &kp RET                             
+&kp F12    &kp F1     &kp F2      &kp F3     &kp F4          &kp F5               /**/           &kp F6   &kp F7     &kp F8    &kp F9     &kp F10   &kp F11
+&kp TAB    &trans     &trans      &trans     &kp HOME        &kp END              /**/           &trans   &trans     &kp UP    &kp O      &trans    &trans
+&kp LSITFT &trans     &trans      &trans     &kp PAGE_DOWN   &kp PAGE_UP          /**/           &trans   &kp LEFT   &kp DOWN  &kp RIGHT  &trans    &trans
+&kp LCTRL  &trans     &trans      &kp LC(C)  &kp LC(V)       &trans     &kp LBKT  /**/  &kp RBKT &trans   &mkp LCLK  &mkp SCLK &mkp RCLK  &trans    &kp RSHIFT 
+                                             &kp LALT        &kp SPACE  &kp SPACE /**/  &kp RET  &kp RALT                            
             >;
         };
 
@@ -178,11 +178,11 @@
 
         lower_layer {
             bindings = <
-&kp ESC    &kp EXCL     &kp AT       &kp HASH     &kp DLLR     &kp PRCNT          /**/           &kp CARET &kp AMPS      &kp ASTRK     &kp LPAR    &kp RPAR &kp BSPC 
-&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4       /**/           &kp MINUS &kp EQUAL     &kp LBKT      &kp RBKT    &kp BSLH &kp GRAVE
-&kp LSHIFT &trans       &trans       &trans       &trans       &trans             /**/           &kp UNDER &kp PLUS      &kp LBRC      &kp RBRC    &kp PIPE &kp TILDE
-&kp LCTRL  &trans       &trans       &trans       &trans       &trans    &kp LBKT /**/  &kp RBKT &trans    &trans        &trans        &trans      &trans   &kp RSHIFT
-                                                  &kp LALT     &kp SPACE &kp BSPC /**/  &kp RET &kp RALT                             
+&kp ESC    &kp EXCL     &kp AT       &kp HASH     &kp DLLR     &kp PRCNT           /**/           &kp CARET &kp AMPS      &kp ASTRK     &kp LPAR    &kp RPAR &kp BSPC 
+&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4        /**/           &kp MINUS &kp EQUAL     &kp LBKT      &kp RBKT    &kp BSLH &kp GRAVE
+&kp LSHIFT &trans       &trans       &trans       &trans       &trans              /**/           &kp UNDER &kp PLUS      &kp LBRC      &kp RBRC    &kp PIPE &kp TILDE
+&kp LCTRL  &trans       &trans       &trans       &trans       &trans    &kp LBKT  /**/  &kp RBKT &trans    &trans        &trans        &trans      &trans   &kp RSHIFT
+                                                  &kp LALT     &kp SPACE &kp SPACE /**/  &kp RET &kp RALT                             
             >;
         };
     };
