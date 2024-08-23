@@ -61,10 +61,10 @@ behaviors {
 // | CTRL |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
 //                    |     | SPC | GUI |   | ENT | RALT |  -  |
                         bindings = <
-   &kp TAB   &kp Q &kp W    &kp E      &kp R        &kp T              &kp Y   &kp U       &kp I     &kp O   &kp P    &kp BSPC
-   &kp LSHFT &kp A &kp S    &kp D      &kp F        &kp G              &kp H   &kp J       &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LCTRL &kp Z &kp X    &kp C      &kp V        &kp B              &kp N   &kp M       &kp COMMA &kp DOT &kp FSLH &kp ESC
-                            &kp LGUI   &lt 1 SPACE  &lt 2 LGUI         &kp RET &kp RALT    &kp LALT  
+   &kp TAB   &kp Q &kp W    &kp E      &kp R        &kp T       &kp Y   &kp U       &kp I     &kp O   &kp P    &kp BSPC
+   &kp LSHFT &kp A &kp S    &kp D      &kp F        &kp G       &kp H   &kp J       &kp K     &kp L   &kp SEMI &kp SQT
+   &kp LCTRL &kp Z &kp X    &kp C      &kp V        &lt 2 B     &kp N   &kp M       &kp COMMA &kp DOT &kp FSLH &kp ESC
+                            &kp LGUI   &lt 1 SPACE  &kp LALT    &kp RET &kp RALT    &kp LALT  
                         >;
                 };
                 lower_layer {
@@ -91,7 +91,7 @@ behaviors {
    &kp  TAB  &kp EXCL   &kp AT    &kp HASH   &kp DLLR   &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &kp BSPC
    &kp LSHFT &kp PG_UP  &kp PG_DN &trans     &trans     &trans      &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &kp GRAVE
    &kp LCTRL &trans     &trans    &trans     &trans     &trans      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp TILDE
-                        &trans    &trans     &kp SPACE  &kp RET     &kp RALT  &trans
+                                  &trans     &kp SPACE  &kp RET     &kp RALT  &trans
                         >;
                 };
         };
