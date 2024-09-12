@@ -80,7 +80,7 @@ behaviors {
                                         &trans       &kp LGUI     &kp LGUI      &kp RET   &kp RALT   &kp RALT
                         >;
                 };
-PSCRN
+
                 raise_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
