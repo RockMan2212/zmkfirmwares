@@ -9,3 +9,5 @@ features:
 siblings:
   - mykeyball_left
   - mykeyball_right
+  - mykeyball_dongle
+
