@@ -7,7 +7,7 @@
 #
 
 board: [ "nice_nano_v2" ]
-shield: [ "mykeyball_left", "mykeyball_right" , , "mykeyball_dongle"]
+shield: [ "mykeyball_left", "mykeyball_right" , "mykeyball_dongle"]
 include:
   - board: nice_nano_v2
     shield: mykeyball_left
