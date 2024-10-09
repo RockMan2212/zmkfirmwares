@@ -111,7 +111,7 @@
 &kp F12    &kp F1     &kp F2      &kp F3     &kp F4          &kp F5               /**/           &kp F6   &kp F7     &kp F8    &kp F9     &kp F10   &kp F11
 &kp TAB    &trans     &trans      &trans     &kp HOME        &kp END              /**/           &trans   &trans     &kp UP    &kp O      &trans    &trans
 &kp LSHIFT &trans     &trans      &trans     &kp PAGE_DOWN   &kp PAGE_UP          /**/           &trans   &kp LEFT   &kp DOWN  &kp RIGHT  &trans    &trans
-&kp LCTRL  &trans     &trans      &kp LC(C)  &kp LC(V)       &trans     &kp LBKT  /**/  &kp RBKT &trans   &mkp LCLK  &mkp SCLK &mkp RCLK  &trans    &kp RSHIFT 
+&kp LCTRL  &trans     &trans      &kp LC(C)  &kp LC(V)       &trans     &kp LBKT  /**/  &kp RBKT &trans   &trans     &trans    &trans     &trans    &kp RSHIFT 
                                              &kp LALT        &kp SPACE  &kp SPACE /**/  &kp RET  &kp RALT                            
             >;
         };
