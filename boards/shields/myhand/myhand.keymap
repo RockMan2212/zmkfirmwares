@@ -51,6 +51,11 @@ behaviors {
             key-positions = <33 34>;
             bindings = <&kp LALT>;
         };
+        combo_Shift {
+            timeout-ms = <50>;
+            key-positions = <11 12>;
+            bindings = <&kp LSHFT>;
+        };
 
 
     };
