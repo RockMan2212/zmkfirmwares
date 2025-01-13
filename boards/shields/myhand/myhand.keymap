@@ -69,12 +69,12 @@ behaviors {
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
 // | SHFT |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
 // | CTRL |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-//                    |     | ENT |LALT |   | SPC | RALT |  -  |
+//                    |     | SPC | GUI |   | ENT | RALT |  -  |
                         bindings = <
-   &kp TAB   &kp Q &kp W    &kp E      &kp R        &kp T       &kp Y     &kp U       &kp I     &kp O   &kp P    &kp BSPC
-   &kp LSHFT &kp A &kp S    &kp D      &kp F        &kp G       &kp H     &kp J       &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LCTRL &kp Z &kp X    &kp C      &kp V        &lt 2 B     &kp N     &kp M       &kp COMMA &kp DOT &kp FSLH &lt 2 ESC
-                            &kp LGUI   &lt 1 RET    &kp LALT    &kp SPACE &lt 1 RALT  &trans  
+   &kp TAB   &kp Q &kp W    &kp E      &kp R        &kp T       &kp Y   &kp U       &kp I     &kp O   &kp P    &kp BSPC
+   &kp LSHFT &kp A &kp S    &kp D      &kp F        &kp G       &kp H   &kp J       &kp K     &kp L   &kp SEMI &kp SQT
+   &kp LCTRL &kp Z &kp X    &kp C      &kp V        &lt 2 B     &kp N   &kp M       &kp COMMA &kp DOT &kp FSLH &lt 2 ESC
+                            &kp LGUI   &lt 1 SPACE  &kp LALT    &kp RET &lt 1 RALT  &trans  
                         >;
                 };
                 lower_layer {
@@ -96,12 +96,12 @@ behaviors {
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
 // | SHFT |PG_UP|PG_DN|     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
 // | CTRL |Left |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-//        ALT+LEFT    |     | ENT | SPC |   | SPC | ALT |     |
+//        ALT+LEFT    |     |     | SPC |   | ENT | ALT |     |
                         bindings = <
    &kp  TAB  &kp EXCL      &kp AT    &kp HASH   &kp DLLR   &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &kp BSPC
    &kp LSHFT &kp PG_UP     &kp PG_DN &trans     &trans     &trans      &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &kp GRAVE
    &kp LCTRL &kp LA(LEFT)  &trans    &trans     &trans     &trans      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp TILDE
-                           &trans    &kp RET    &kp RET    &kp SPACE   &kp RALT  &trans
+                           &trans    &kp SPACE  &kp RET    &trans      &kp RALT  &trans
                         >;
                 };
         };
