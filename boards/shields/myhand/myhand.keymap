@@ -75,7 +75,7 @@ behaviors {
    &kp LSHFT &kp A &kp S    &kp D      &kp F        &kp G       &kp H     &kp J       &kp K     &kp L   &kp SEMI &kp SQT
    &kp LCTRL &kp Z &kp X    &kp C      &kp V        &lt 2 B     &kp N     &kp M       &kp COMMA &kp DOT &kp FSLH &lt 2 ESC
                             &kp LGUI   &lt 1 RET    &kp LALT    &kp SPACE &lt 1 RALT  &trans  
-                        >;SPACE
+                        >;
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
