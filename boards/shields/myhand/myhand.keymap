@@ -47,10 +47,10 @@ behaviors {
                     key-positions = <33 34>;
                     bindings = <&kp LALT>;
                 };
-            combo_Shift {
+            combo_win {
                 timeout-ms = <50>;
                 key-positions = <10 11>;
-                bindings = <&kp LSHFT>;
+                bindings = <&kp LGUI>;
             };
        
         };
@@ -67,13 +67,7 @@ behaviors {
             tapping-term-ms = <200>;
             bindings = <&kp LSHFT>, <&kp SEMI>;
         };
-        td_w: tap_dance_win {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp T>, <&kp LGUI>;
-        };
-
+        
   };
     
 
@@ -87,7 +81,7 @@ behaviors {
 // | CTRL |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
 //                    |     | SPC |tr_r0|   | BKSP | RALT |  -  |
                         bindings = <
-   &kp TAB   &kp Q &kp W    &kp E      &kp R        &td_w       &kp Y   &kp U       &kp I     &kp O   &kp P    &kp BSPC
+   &kp TAB   &kp Q &kp W    &kp E      &kp        &kp T       &kp Y   &kp U       &kp I     &kp O   &kp P    &kp BSPC
    &kp LSHFT &kp A &kp S    &kp D      &kp F        &kp G       &kp H   &kp J       &kp K     &kp L   &td_s0   &kp SQT
    &kp LCTRL &kp Z &kp X    &kp C      &kp V        &lt 2 B     &kp N   &kp M       &kp COMMA &kp DOT &kp FSLH &lt 2 ESC
                             &kp LGUI   &lt 1 SPACE  &td_r0      &kp BSPC &lt 1 RALT  &trans  
