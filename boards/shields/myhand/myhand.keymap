@@ -58,7 +58,7 @@ behaviors {
          td_r0: tap_dance_RET {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <200>;        
             bindings = <&kp RET>, <&kp LALT>;
         };
         td_s0: tap_dance_Shift {
@@ -66,6 +66,12 @@ behaviors {
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp LSHFT>, <&kp SEMI>;
+        };
+        td_copy: tap_dance_Shift {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp TAB>, <&kp LCTRL>;
         };
         
   };
@@ -81,7 +87,7 @@ behaviors {
 // | CTRL |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
 //                    |     | SPC |LALT |   | BKSP | RALT |  -  |
                         bindings = <
-   &kp TAB   &kp Q &kp W    &kp E      &kp R       &kp T       &kp Y   &kp U       &kp I     &kp O   &kp P    &kp RET
+   &td_copy   &kp Q &kp W    &kp E      &kp R       &kp T       &kp Y   &kp U       &kp I     &kp O   &kp P    &kp RET
    &kp LSHFT &kp A &kp S    &kp D      &kp F        &kp G       &kp H   &kp J       &kp K     &kp L   &td_s0   &kp SQT
    &kp LCTRL &kp Z &kp X    &kp C      &kp V        &lt 2 B     &kp N   &kp M       &kp COMMA &kp DOT &kp FSLH &lt 2 ESC
                             &kp LGUI   &lt 1 SPACE  &kp LALT      &kp BSPC &lt 1 RALT  &trans  
