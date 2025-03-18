@@ -67,7 +67,7 @@ behaviors {
             tapping-term-ms = <200>;
             bindings = <&kp LSHFT>, <&kp SEMI>;
         };
-        td_copy: tap_dance_Shift {
+        td_copy: tap_dance_ctrl {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
